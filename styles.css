@@ -1,0 +1,33 @@
+body{
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#divBox{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+button {
+    border-radius: 10px;
+}
+
+#buttonAdd{
+    background-color: lightgreen;
+    font-weight: bold;
+}
+
+#buttonResult{
+    font-weight: bold;
+    background-color: aquamarine;
+}
+
+h1{
+    background-color: chocolate;
+    display: inline;
+    border-radius: 10px;
+}
