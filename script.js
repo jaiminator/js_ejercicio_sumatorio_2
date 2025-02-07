@@ -1,3 +1,4 @@
+document.body.addEventListener("keydown", clear)
 const buttonAdd = document.getElementById("buttonAdd")
 buttonAdd.addEventListener("click", addNumber)
 const buttonResult = document.getElementById("buttonResult")
@@ -16,4 +17,18 @@ function addNumber() {
 
 function showResult() {
     document.getElementById("result").innerHTML = "La sumatoria da: " + result
+}
+
+function clear(event) {
+    result = 0
+    let key = event.key
+    if (key == "Escape"){
+        document.getElementById("idNumber").value = ""
+        document.getElementById("result").innerHTML = ""
+
+        let selectorLi = document.querySelectorAll("li")
+        for (let i = 0; i < selectorLi.length; i++) {
+            selectorLi[i].remove()
+        }
+    }
 }
